@@ -1,0 +1,8 @@
+#about {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+  margin: 10rem;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "todotipid-web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"node ./todotipid-api/dist/index.js\" \"http-server ./todotipid-web/build --proxy http://localhost:8080?\"",
+    "build": "cd ./todotipid-api && npm install && npm run build && cd.. && cd ./todotipid-web && npm install && npm run build",
+    "dev": "react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.0"
+  },
+  "description": "An Ionic project",
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "todotipid-web",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
